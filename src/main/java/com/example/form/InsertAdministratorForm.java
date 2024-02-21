@@ -20,6 +20,17 @@ public class InsertAdministratorForm {
 	/** パスワード */
 	@Size(min = 8, max = 16, message = "8文字以上16文字以内で入力してください")
 	private String password;
+	/** 確認用パスワード */
+	@Size(min = 8, max = 16, message = "8文字以上16文字以内で入力してください")
+	private String confirmPassword;
+
+	public String getConfirmPassword() {
+		return confirmPassword;
+	}
+
+	public void setConfirmPassword(String confirmPassword) {
+		this.confirmPassword = confirmPassword;
+	}
 
 	public String getName() {
 		return name;
